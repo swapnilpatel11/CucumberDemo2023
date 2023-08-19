@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="6.467" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Feature to test the login functionality of Zero Banking Application." name="Check signin button exists on Home Page" time="4.135">
+<system-out><![CDATA[
+Given User launch the browser...............................................passed
+When User open the Zero Banking Application.................................passed
+Then Signin button should be displayed......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Feature to test the login functionality of Zero Banking Application." name="Login successful with valid credentials" time="1.663">
+<system-out><![CDATA[
+Given User launch the browser...............................................passed
+And User open the Zero Banking Application..................................passed
+And click Signin button on home page of application.........................passed
+When User enter username and password.......................................passed
+And User click on Signin button.............................................passed
+Then User should be redirected to the home page of user.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="feature to test logout functionality" name="Logged in User should be able to logout" time="0.428">
+<system-out><![CDATA[
+Given User click the username dropdown......................................passed
+When User click the LogOut button...........................................passed
+Then User should be redirect to the home page of zero banking application...passed
+]]></system-out>
+</testcase>
+</testsuite>
